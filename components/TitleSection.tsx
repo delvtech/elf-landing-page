@@ -12,6 +12,7 @@ async function postData(url = "", data = {}) {
   const response = await fetch(url, {
     method: "POST",
     cache: "no-cache",
+    mode: 'no-cors',
     credentials: "same-origin",
     headers: {
       "Content-Type": "application/json",
