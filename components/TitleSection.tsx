@@ -15,8 +15,7 @@ async function postData(url = "", data = {}) {
     credentials: "same-origin",
     headers: {
       "Content-Type": "application/json",
-      "x-Octopus-ApiKey": process.env.NEXT_PUBLIC_EMAIL_OCTOPUS_API_KEY,
-    } as any,
+    },
     redirect: "follow",
     referrerPolicy: "no-referrer",
     body: JSON.stringify(data), // body data type must match "Content-Type" header
@@ -38,7 +37,7 @@ function Email() {
   const submitEmailForm = useCallback(() => {
     // Example POST method implementation:
     postData(
-      `https://emailoctopus.com/api/1.5/lists/bec30112-0e12-11eb-a3d0-06b4694bee2a/contacts`,
+      `https://emailoctopus.com/api/1.5/lists/bec30112-0e12-11eb-a3d0-06b4694bee2a/contacts?apikey=${process.env.NEXT_PUBLIC_EMAIL_OCTOPUS_API_KEY}`,
       {
         api_key: process.env.NEXT_PUBLIC_EMAIL_OCTOPUS_API_KEY,
         email_address: email,
