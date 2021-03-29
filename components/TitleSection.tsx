@@ -15,7 +15,8 @@ async function postData(url = "", data = {}) {
     credentials: "same-origin",
     headers: {
       "Content-Type": "application/json",
-    },
+      "x-Octopus-ApiKey": process.env.NEXT_PUBLIC_EMAIL_OCTOPUS_API_KEY,
+    } as any,
     redirect: "follow",
     referrerPolicy: "no-referrer",
     body: JSON.stringify(data), // body data type must match "Content-Type" header
