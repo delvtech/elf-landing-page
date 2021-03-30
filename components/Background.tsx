@@ -593,9 +593,9 @@ function OtherCrimsonBlurryCircle({ sx }: WithSx) {
 
 export function TeamBackground() {
   return (
-    <Flex sx={{ flexDirection: 'row', position: 'relative' }} mb={7}>
-      <LargeBlueCircle />
-      <GreenCircleWithRadial sx={{ top: '100px', left: '25%' }} />
+    <Flex sx={{ flexDirection: 'row', position: 'relative', }} mb={7}>
+      <LargeBlueCircle sx={{ top: "-50px", left: "-500px" }}/>
+      <GreenCircleWithRadial sx={{ top: '-50px', left: '25%' }} />
       <OtherCrimsonBlurryCircle />
     </Flex>
   )
