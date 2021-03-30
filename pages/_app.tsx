@@ -64,7 +64,7 @@ function App({ Component, pageProps }: AppProps): JSX.Element {
         />
         <meta property="og:image" content="/element-finance.jpg" />
         <meta property="og:url" content="http://element.fi" />
-        <meta name="twitter:card" content="/element-finance.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
 
         {/* Non-Essential, But Recommended  */}
         <meta property="og:site_name" content="Element Finance" />
