@@ -56,7 +56,7 @@ export function Advisors() {
         sx={{
           justifyContent: "center",
           flexWrap: "wrap",
-          mb: "300px",
+          mb: "160px",
           maxWidth: "700px",
         }}
         p={[1, 2]}
@@ -65,8 +65,8 @@ export function Advisors() {
           <Grid
             key={idx}
             sx={{ justifyContent: "space-evenly", maxWidth: "175px" }}
-            mb="80px"
             px={2}
+            mx={2}
             gap={"19px"}
           >
             <Box
@@ -81,7 +81,7 @@ export function Advisors() {
                 height="269px"
               />
             </Box>
-            <Grid gap={"6px"} sx={{ maxWidth: "175px" }}>
+            <Grid gap={"6px"} mb={"80px"} sx={{ maxWidth: "175px" }}>
               <Text
                 variant="text.subHeading"
                 sx={{ fontWeight: "heading", textOverflow: "wrap" }}

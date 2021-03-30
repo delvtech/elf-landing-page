@@ -597,7 +597,6 @@ export function TeamBackground() {
       <LargeBlueCircle />
       <GreenCircleWithRadial sx={{ top: '100px', left: '25%' }} />
       <OtherCrimsonBlurryCircle />
-      <GreenTesselation />
     </Flex>
   )
 }
