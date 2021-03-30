@@ -62,9 +62,9 @@ function App({ Component, pageProps }: AppProps): JSX.Element {
           property="og:description"
           content="Element Finance offers BTC, ETH and USDC at a discount, introducing high fixed yield income to the DeFi market."
         />
-        {/* TODO: <meta property="og:image" content="" /> */}
+        <meta property="og:image" content="/element-finance.jpg" />
         <meta property="og:url" content="http://element.fi" />
-        {/* TODO: <meta name="twitter:card" content="" /> */}
+        <meta name="twitter:card" content="/element-finance.jpg" />
 
         {/* Non-Essential, But Recommended  */}
         <meta property="og:site_name" content="Element Finance" />
