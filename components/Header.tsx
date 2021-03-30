@@ -113,7 +113,10 @@ export function Header() {
               sx={{ alignItems: "center" }}
             >
               <Link to="investors" smooth={true} offset={-70} duration={1000}>
-                <Text variant="subHeading" sx={{ fontWeight: "semiBold" }}>
+                <Text
+                  variant="subHeading"
+                  sx={{ fontWeight: "semiBold", cursor: "pointer" }}
+                >
                   Investors
                 </Text>
               </Link>
@@ -126,7 +129,10 @@ export function Header() {
                 </Text>
               </Link>
               <Link to="advisors" smooth={true} offset={-70} duration={1000}>
-                <Text variant="subHeading" sx={{ fontWeight: "semiBold" }}>
+                <Text
+                  variant="subHeading"
+                  sx={{ fontWeight: "semiBold", cursor: "pointer" }}
+                >
                   Advisors
                 </Text>
               </Link>
