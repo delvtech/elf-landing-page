@@ -1,5 +1,6 @@
 import { keyframes } from "@emotion/react";
 import React, { PropsWithChildren } from "react";
+import { Parallax } from "react-scroll-parallax";
 import { Box, Flex, Grid, SxStyleProp } from "theme-ui";
 
 import { Desktop } from "./Desktop";
@@ -364,20 +365,22 @@ function LightBlueBlurryCircle({ sx }: WithSx) {
 export function TitleBackground(): JSX.Element {
   return (
     <Box sx={{ position: "relative" }}>
-      <BlueCircleWithThreeRedRadials
-        sx={{
-          top: "450px",
-          left: "15%",
-        }}
-      />
-      <GreenCircleWithRadial sx={{ left: "30%" }} />
-      <Desktop>
-        <BlurryGreenTesselation sx={{ top: "275px", left: "20%" }} />
-      </Desktop>
-      <BlueCircle20pxBlur sx={{ top: "500px", left: "-10%" }} />
-      <BlueCircle36pxBlur sx={{ top: "400px", left: "15%" }} />
-      <CrimsonBlurryCircle sx={{ top: "250px", left: "35%" }} />
-      <LightBlueBlurryCircle sx={{ left: "10%" }} />
+      <Parallax y={[-30, 30]}>
+        <BlueCircleWithThreeRedRadials
+          sx={{
+            top: "450px",
+            left: "15%",
+          }}
+        />
+        <GreenCircleWithRadial sx={{ left: "30%" }} />
+        <Desktop>
+          <BlurryGreenTesselation sx={{ top: "275px", left: "20%" }} />
+        </Desktop>
+        <BlueCircle20pxBlur sx={{ top: "500px", left: "-10%" }} />
+        <BlueCircle36pxBlur sx={{ top: "400px", left: "15%" }} />
+        <CrimsonBlurryCircle sx={{ top: "250px", left: "35%" }} />
+        <LightBlueBlurryCircle sx={{ left: "10%" }} />
+      </Parallax>
     </Box>
   );
 }
@@ -492,10 +495,12 @@ function LightGreenBlurryCircle({ sx }: WithSx) {
 export function InvestorsBackground() {
   return (
     <Box sx={{ position: "relative" }} mt={"-1500px"}>
-      <GreenCircle sx={{ top: "800px", left: "-10%" }} />
-      <SmallBlueCircle sx={{ top: "400px", left: "45%" }} />
-      <LightGreenBlurryCircle sx={{ top: "950px", left: "20%" }} />
-      <LargeBlueCircle />
+      <Parallax y={[-30, 30]}>
+        <GreenCircle sx={{ top: "800px", left: "-10%" }} />
+        <SmallBlueCircle sx={{ top: "400px", left: "45%" }} />
+        <LightGreenBlurryCircle sx={{ top: "950px", left: "20%" }} />
+        <LargeBlueCircle />
+      </Parallax>
     </Box>
   );
 }
@@ -669,9 +674,11 @@ export function TeamBackground() {
       }}
       mb={7}
     >
-      <LargeBlueCircle sx={{ top: "-50px", left: "-500px" }} />
-      <GreenCircleWithRadial sx={{ top: "-50px", left: "25%" }} />
-      <OtherCrimsonBlurryCircle />
+      <Parallax y={[-30, 100]}>
+        <LargeBlueCircle sx={{ top: "-50px", left: "-500px" }} />
+        <GreenCircleWithRadial sx={{ top: "-50px", left: "25%" }} />
+        <OtherCrimsonBlurryCircle />
+      </Parallax>
     </Flex>
   );
 }

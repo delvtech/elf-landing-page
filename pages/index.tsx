@@ -7,9 +7,11 @@ import { Team } from 'components/Team'
 import { TitleSection } from 'components/TitleSection'
 import React from 'react'
 import { Box, Container, Flex, Grid } from 'theme-ui'
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function Background() {
   return (
+    <ParallaxProvider>
     <Flex
       sx={{
         flexDirection: 'column',
@@ -25,6 +27,7 @@ function Background() {
       <InvestorsBackground />
       <TeamBackground />
     </Flex>
+    </ParallaxProvider>
   )
 }
 
