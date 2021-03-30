@@ -97,7 +97,7 @@ export function TitleSection(): JSX.Element {
               `radial-gradient(rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0))`,
           }}
         >
-          Element finance offers BTC, ETH and USDC at a discount, introducing
+          Element Finance offers BTC, ETH and USDC at a discount, introducing
           high fixed yield income to the DeFi market.
         </Text>
         <Email />
