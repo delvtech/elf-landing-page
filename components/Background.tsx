@@ -106,7 +106,7 @@ function BlueCircleWithThreeRedRadials({ sx }: WithSx) {
     <Box
       {...{
         sx: {
-          animation: `${keyframe} 40s linear infinite normal`,
+          animation: `${keyframe} 80s linear infinite normal`,
           position: 'relative',
           zIndex: -1,
           ...sx,
@@ -151,7 +151,7 @@ function GreenCircleWithRadial({ sx }: WithSx) {
       {...{
         sx: {
           zIndex: -2,
-          animation: `${keyframe} 50s linear infinite normal`,
+          animation: `${keyframe} 100s linear infinite normal`,
           position: 'absolute',
           ...sx,
         },
@@ -252,7 +252,7 @@ function BlueCircle36pxBlur({ sx }: WithSx) {
     <Box
       sx={{
         zIndex: -5,
-        animation: `${keyframe} 26s linear infinite normal`,
+        animation: `${keyframe} 42s linear infinite normal`,
         position: 'absolute',
         ...sx,
       }}
@@ -289,7 +289,7 @@ function CrimsonBlurryCircle({ sx }: WithSx) {
     <Box
       sx={{
         zIndex: -6,
-        animation: `${keyframe} 48s linear infinite normal`,
+        animation: `${keyframe} 96s linear infinite normal`,
         position: 'absolute',
         ...sx,
       }}
@@ -363,7 +363,7 @@ function GreenCircle({ sx }: WithSx) {
     <Box
       sx={{
         zIndex: -2,
-        animation: `${keyframe} 40s linear infinite normal`,
+        animation: `${keyframe} 80s linear infinite normal`,
 
         position: 'absolute',
         ...sx,
@@ -400,7 +400,7 @@ function SmallBlueCircle({ sx }: WithSx) {
     <Box
       {...{
         sx: {
-          animation: `${keyframe} 40s linear infinite normal`,
+          animation: `${keyframe} 80s linear infinite normal`,
           position: 'absolute',
           zIndex: -4,
           ...sx,
@@ -467,7 +467,7 @@ function LargeBlueCircle({ sx }: WithSx) {
     <Box
       {...{
         sx: {
-          animation: `${keyframe} 40s linear infinite normal`,
+          animation: `${keyframe} 80s linear infinite normal`,
           position: 'absolute',
           zIndex: -3,
           ...sx,
@@ -577,7 +577,7 @@ function OtherCrimsonBlurryCircle({ sx }: WithSx) {
     <Box
       sx={{
         zIndex: -6,
-        animation: `${keyframe} 48s linear infinite normal`,
+        animation: `${keyframe} 96s linear infinite normal`,
         position: 'absolute',
         ...sx,
       }}
