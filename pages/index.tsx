@@ -38,9 +38,9 @@ function Main() {
     >
       <Header />
       <Container variant={'container'} sx={{ flex: 2 }} as="main">
-        <Grid sx={{ width: '100%', height: '100%', px: 3 }} gap={8} mt="25vh">
+        <Grid sx={{ width: '100%', height: '100%', px: 3 }} gap={7} mt="25vh">
           <TitleSection />
-          <Grid gap={7}>
+          <Grid gap={6}>
             <Box id="investors">
               <Investors />
             </Box>
