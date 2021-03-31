@@ -25,7 +25,7 @@ export function Footer() {
                   sx={{ ml: '4px', mt: '4px' }}
                 />
               </Link>
-              <Link href="https://medium.com/@elementfinance" target="_blank">
+              <Link href="https://medium.com/@element-finance" target="_blank">
                 <Icon
                   name="medium"
                   color="background"
