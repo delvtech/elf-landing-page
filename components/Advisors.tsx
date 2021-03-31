@@ -56,7 +56,7 @@ export function Advisors() {
         sx={{
           justifyContent: "center",
           flexWrap: "wrap",
-          mb: "160px",
+          mb: "80px",
           maxWidth: "700px",
         }}
         p={[1, 2]}
