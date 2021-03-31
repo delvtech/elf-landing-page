@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <Box>
       <Box bg="primary" sx={{ width: '100%' }}>
-        <Flex sx={{ flexDirection: 'column', minHeight: 7, justifyContent: 'center' }}>
+        <Flex sx={{ flexDirection: 'column', minHeight: 6, justifyContent: 'center' }}>
           <Flex sx={{ justifyContent: 'center' }}>
             <Flex sx={{ justifyContent: 'space-evenly', maxWidth: '800px', width: '100%' }}>
               <Link href="https://twitter.com/element_fi" target="_blank">
