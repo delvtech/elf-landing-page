@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Card, Container, Flex, Grid, IconButton, Text } from "theme-ui";
-import { MenuButton } from "theme-ui";
+import { MenuButton, Link as AnchorLink } from "theme-ui";
 
 import { Desktop } from "./Desktop";
 import { Icon } from "./Icon";
@@ -109,7 +109,7 @@ export function Header() {
           <Desktop>
             <Grid
               gap={4}
-              columns="auto auto auto"
+              columns="auto auto auto auto"
               sx={{ alignItems: "center" }}
             >
               <Link to="investors" smooth={true} offset={-70} duration={1000}>
@@ -136,6 +136,11 @@ export function Header() {
                   Advisors
                 </Text>
               </Link>
+              <AnchorLink href="https://paper.element.fi/" target="_blank">
+                <Text variant="subHeading" sx={{ fontWeight: "semiBold" }}>
+                  Construction Paper
+                </Text>
+              </AnchorLink>
             </Grid>
           </Desktop>
           <Mobile sx={{ display: ["block", "none"] }}>
