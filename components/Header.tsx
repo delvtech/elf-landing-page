@@ -138,7 +138,7 @@ export function Header() {
               </Link>
               <AnchorLink href="https://paper.element.fi/" target="_blank">
                 <Text variant="subHeading" sx={{ fontWeight: "semiBold" }}>
-                  Construction Paper
+                  Documentation
                 </Text>
               </AnchorLink>
             </Grid>
