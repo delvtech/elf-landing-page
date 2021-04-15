@@ -68,6 +68,11 @@ function HamburgerDropdown() {
               Advisors
             </Text>
           </Link>
+          <AnchorLink href="https://paper.element.fi/" target="_blank">
+            <Text variant="subHeading" sx={{ fontWeight: "semiBold" }}>
+              Documentation
+            </Text>
+          </AnchorLink>
         </Grid>
       </Card>
       <Grid sx={{ alignContent: "center" }}>
