@@ -68,6 +68,17 @@ function HamburgerDropdown() {
               Advisors
             </Text>
           </Link>
+          <Link
+            to="careers"
+            onClick={closeDropdown}
+            smooth={true}
+            offset={-70}
+            duration={1000}
+          >
+            <Text variant="subHeading" sx={{ fontWeight: "semiBold" }}>
+              Careers
+            </Text>
+          </Link>
           <AnchorLink href="https://paper.element.fi/" target="_blank">
             <Text variant="subHeading" sx={{ fontWeight: "semiBold" }}>
               Documentation
@@ -114,7 +125,7 @@ export function Header() {
           <Desktop>
             <Grid
               gap={4}
-              columns="auto auto auto auto"
+              columns="auto auto auto auto auto"
               sx={{ alignItems: "center" }}
             >
               <Link to="investors" smooth={true} offset={-70} duration={1000}>
@@ -139,6 +150,14 @@ export function Header() {
                   sx={{ fontWeight: "semiBold", cursor: "pointer" }}
                 >
                   Advisors
+                </Text>
+              </Link>
+              <Link to="careers" smooth={true} offset={-70} duration={1000}>
+                <Text
+                  variant="subHeading"
+                  sx={{ fontWeight: "semiBold", cursor: "pointer" }}
+                >
+                  Careers
                 </Text>
               </Link>
               <AnchorLink href="https://paper.element.fi/" target="_blank">
