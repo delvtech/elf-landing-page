@@ -1,16 +1,6 @@
-import { Advisors } from "components/Advisors";
-import {
-  InvestorsBackground,
-  TeamBackground,
-  TitleBackground,
-} from "components/Background";
 import { Footer } from "components/Footer";
-import { Header } from "components/Header";
-import { Investors } from "components/Investors";
-import { Team } from "components/Team";
-import { TitleSection } from "components/TitleSection";
 import React from "react";
-import { Box, Container, Flex, Grid } from "theme-ui";
+import { Box, Text, Flex } from "theme-ui";
 import { ParallaxProvider } from "react-scroll-parallax";
 import { HeaderLinked } from "components/HeaderLinked";
 
@@ -53,11 +43,10 @@ function Main() {
         <Flex
           sx={{ flexDirection: "column", maxWidth: "50%", minWidth: "400px" }}
         >
-          <span style={{ marginBottom: 48 }}>
-            We are looking for a talented software engineer to join our team and
-            build the future of finance.
-          </span>
-          <span style={{ marginBottom: 48 }}>
+          <Text variant="heading" sx={{ fontSize: [5, 6], marginBottom: 4 }}>
+            Join the team
+          </Text>
+          <Text sx={{ marginBottom: 4 }}>
             Element is a protocol that’s launching novel fixed rate DeFi
             primitives and aiming to become a backbone of the decentralized
             finance ecosystem. Our core team was founded by a pair of serious
@@ -66,14 +55,30 @@ function Main() {
             would also mean working with people who contributed to top DeFi
             projects such as Maker, 0x and Keep who are all leveling up their
             skills together.
-          </span>
-          <span style={{ marginBottom: 48 }}>
+          </Text>
+          <Text sx={{ marginBottom: 4 }}>
+            Element Protocol will evolve past the core team on launch to become
+            a community run and lead network. If you join now you will have the
+            opportunity to work in a totally new type of decentralized community
+            oriented organisation. The core team is aiming to infuse the network
+            and community with our values: strong decentralization, free and
+            open access to financial protocols and code, and the desire to make
+            the world a better place. Unlike other startups which have to evolve
+            into organizations which purely pursue the profit of shareholders,
+            Element protocol as a decentralized network has the potential to
+            actually deliver on the promise that your work will make the world a
+            better place.
+          </Text>
+          <Text sx={{ marginBottom: 5 }}>
             If you join our core team you will play an important role in
             fostering and supporting the Element ecosystem and protocol as it
             develops, and your work will directly contribute to a new type of
             organisation which will make finance freer, fairer, and better for
             the world.
-          </span>
+          </Text>
+          <Text variant="heading" sx={{ fontSize: [5, 6], marginBottom: 4 }}>
+            Job Listings
+          </Text>
           <script
             data-startup="element-finance"
             src="https://angel.co/javascripts/embed_jobs.js"
