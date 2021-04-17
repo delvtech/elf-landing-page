@@ -68,17 +68,11 @@ function HamburgerDropdown() {
               Advisors
             </Text>
           </Link>
-          <Link
-            to="careers"
-            onClick={closeDropdown}
-            smooth={true}
-            offset={-70}
-            duration={1000}
-          >
+          <AnchorLink href="/careers">
             <Text variant="subHeading" sx={{ fontWeight: "semiBold" }}>
               Careers
             </Text>
-          </Link>
+          </AnchorLink>
           <AnchorLink href="https://paper.element.fi/" target="_blank">
             <Text variant="subHeading" sx={{ fontWeight: "semiBold" }}>
               Documentation
