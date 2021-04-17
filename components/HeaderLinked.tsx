@@ -8,7 +8,7 @@ import { Mobile } from "./Mobile";
 
 import { Link, animateScroll as scroll } from "react-scroll";
 
-function HamburgerDropdown() {
+function HamburgerDropdownLinked() {
   const [dropdownActive, setDropdownActive] = useState<boolean>(false);
   function toggleDropdown() {
     setDropdownActive(!dropdownActive);
@@ -32,53 +32,29 @@ function HamburgerDropdown() {
         }}
       >
         <Grid>
-          <Link
-            to="investors"
-            onClick={closeDropdown}
-            smooth={true}
-            offset={-70}
-            duration={1000}
-          >
+          <AnchorLink href="/#investors" onClick={closeDropdown}>
             <Text variant="subHeading" sx={{ fontWeight: "semiBold" }}>
               Investors
             </Text>
-          </Link>
-          <Link
-            to="team"
-            onClick={closeDropdown}
-            smooth={true}
-            offset={-70}
-            duration={1000}
-          >
+          </AnchorLink>
+          <AnchorLink href="/#team" onClick={closeDropdown}>
             <Text
               variant="subHeading"
               sx={{ fontWeight: "semiBold", cursor: "pointer" }}
             >
               Team
             </Text>
-          </Link>
-          <Link
-            to="advisors"
-            onClick={closeDropdown}
-            smooth={true}
-            offset={-70}
-            duration={1000}
-          >
+          </AnchorLink>
+          <AnchorLink href="/#advisors" onClick={closeDropdown}>
             <Text variant="subHeading" sx={{ fontWeight: "semiBold" }}>
               Advisors
             </Text>
-          </Link>
-          <Link
-            to="careers"
-            onClick={closeDropdown}
-            smooth={true}
-            offset={-70}
-            duration={1000}
-          >
+          </AnchorLink>
+          <AnchorLink href="/careers" onClick={closeDropdown}>
             <Text variant="subHeading" sx={{ fontWeight: "semiBold" }}>
               Careers
             </Text>
-          </Link>
+          </AnchorLink>
           <AnchorLink href="https://paper.element.fi/" target="_blank">
             <Text variant="subHeading" sx={{ fontWeight: "semiBold" }}>
               Documentation
@@ -112,7 +88,7 @@ function HamburgerDropdown() {
   );
 }
 
-export function Header() {
+export function HeaderLinked() {
   return (
     <Container variant="header">
       <Flex
@@ -128,30 +104,30 @@ export function Header() {
               columns="auto auto auto auto auto"
               sx={{ alignItems: "center" }}
             >
-              <Link to="investors" smooth={true} offset={-70} duration={1000}>
+              <AnchorLink href="/#investors">
                 <Text
                   variant="subHeading"
                   sx={{ fontWeight: "semiBold", cursor: "pointer" }}
                 >
                   Investors
                 </Text>
-              </Link>
-              <Link to="team" smooth={true} offset={-70} duration={1000}>
+              </AnchorLink>
+              <AnchorLink href="/#team">
                 <Text
                   variant="subHeading"
                   sx={{ fontWeight: "semiBold", cursor: "pointer" }}
                 >
                   Team
                 </Text>
-              </Link>
-              <Link to="advisors" smooth={true} offset={-70} duration={1000}>
+              </AnchorLink>
+              <AnchorLink href="/#advisors">
                 <Text
                   variant="subHeading"
                   sx={{ fontWeight: "semiBold", cursor: "pointer" }}
                 >
                   Advisors
                 </Text>
-              </Link>
+              </AnchorLink>
               <AnchorLink href="/careers">
                 <Text
                   variant="subHeading"
@@ -168,7 +144,7 @@ export function Header() {
             </Grid>
           </Desktop>
           <Mobile sx={{ display: ["block", "none"] }}>
-            <HamburgerDropdown />
+            <HamburgerDropdownLinked />
           </Mobile>
         </>
       </Flex>

@@ -12,6 +12,7 @@ import { TitleSection } from "components/TitleSection";
 import React from "react";
 import { Box, Container, Flex, Grid } from "theme-ui";
 import { ParallaxProvider } from "react-scroll-parallax";
+import { HeaderLinked } from "components/HeaderLinked";
 
 function Background() {
   return (
@@ -39,7 +40,7 @@ function Main() {
         minHeight: "100%",
       }}
     >
-      <Header />
+      <HeaderLinked />
       <Flex
         variant={"container"}
         sx={{
