@@ -8,6 +8,78 @@ import { Mobile } from "./Mobile";
 
 import { Link, animateScroll as scroll } from "react-scroll";
 
+export function HeaderLinked() {
+  return (
+    <Container variant="header">
+      <Flex
+        sx={{ justifyContent: "space-between", alignItems: "center" }}
+        py={[2, 3]}
+        px={[3, 4]}
+      >
+        <Icon name="logo" height="69px" width="209px" />
+        <>
+          <Desktop>
+            <Grid
+              gap={4}
+              columns="auto auto auto auto auto auto"
+              sx={{ alignItems: "center" }}
+            >
+              <AnchorLink href="/#investors">
+                <Text
+                  variant="subHeading"
+                  sx={{ fontWeight: "semiBold", cursor: "pointer" }}
+                >
+                  Investors
+                </Text>
+              </AnchorLink>
+              <AnchorLink href="/#team">
+                <Text
+                  variant="subHeading"
+                  sx={{ fontWeight: "semiBold", cursor: "pointer" }}
+                >
+                  Team
+                </Text>
+              </AnchorLink>
+              <AnchorLink href="/#advisors">
+                <Text
+                  variant="subHeading"
+                  sx={{ fontWeight: "semiBold", cursor: "pointer" }}
+                >
+                  Advisors
+                </Text>
+              </AnchorLink>
+              <AnchorLink href="/careers">
+                <Text
+                  variant="subHeading"
+                  sx={{ fontWeight: "semiBold", cursor: "pointer" }}
+                >
+                  Careers
+                </Text>
+              </AnchorLink>
+              <AnchorLink href="https://paper.element.fi/" target="_blank">
+                <Text variant="subHeading" sx={{ fontWeight: "semiBold" }}>
+                  Documentation
+                </Text>
+              </AnchorLink>
+              <AnchorLink href="/security">
+                <Text
+                  variant="subHeading"
+                  sx={{ fontWeight: "semiBold", cursor: "pointer" }}
+                >
+                  Security
+                </Text>
+              </AnchorLink>
+            </Grid>
+          </Desktop>
+          <Mobile sx={{ display: ["block", "none"] }}>
+            <HamburgerDropdownLinked />
+          </Mobile>
+        </>
+      </Flex>
+    </Container>
+  );
+}
+
 function HamburgerDropdownLinked() {
   const [dropdownActive, setDropdownActive] = useState<boolean>(false);
   function toggleDropdown() {
@@ -60,6 +132,14 @@ function HamburgerDropdownLinked() {
               Documentation
             </Text>
           </AnchorLink>
+          <AnchorLink href="/security">
+            <Text
+              variant="subHeading"
+              sx={{ fontWeight: "semiBold", cursor: "pointer" }}
+            >
+              Security
+            </Text>
+          </AnchorLink>
         </Grid>
       </Card>
       <Grid sx={{ alignContent: "center" }}>
@@ -85,69 +165,5 @@ function HamburgerDropdownLinked() {
         />
       </Grid>
     </Flex>
-  );
-}
-
-export function HeaderLinked() {
-  return (
-    <Container variant="header">
-      <Flex
-        sx={{ justifyContent: "space-between", alignItems: "center" }}
-        py={[2, 3]}
-        px={[3, 4]}
-      >
-        <Icon name="logo" height="69px" width="209px" />
-        <>
-          <Desktop>
-            <Grid
-              gap={4}
-              columns="auto auto auto auto auto"
-              sx={{ alignItems: "center" }}
-            >
-              <AnchorLink href="/#investors">
-                <Text
-                  variant="subHeading"
-                  sx={{ fontWeight: "semiBold", cursor: "pointer" }}
-                >
-                  Investors
-                </Text>
-              </AnchorLink>
-              <AnchorLink href="/#team">
-                <Text
-                  variant="subHeading"
-                  sx={{ fontWeight: "semiBold", cursor: "pointer" }}
-                >
-                  Team
-                </Text>
-              </AnchorLink>
-              <AnchorLink href="/#advisors">
-                <Text
-                  variant="subHeading"
-                  sx={{ fontWeight: "semiBold", cursor: "pointer" }}
-                >
-                  Advisors
-                </Text>
-              </AnchorLink>
-              <AnchorLink href="/careers">
-                <Text
-                  variant="subHeading"
-                  sx={{ fontWeight: "semiBold", cursor: "pointer" }}
-                >
-                  Careers
-                </Text>
-              </AnchorLink>
-              <AnchorLink href="https://paper.element.fi/" target="_blank">
-                <Text variant="subHeading" sx={{ fontWeight: "semiBold" }}>
-                  Documentation
-                </Text>
-              </AnchorLink>
-            </Grid>
-          </Desktop>
-          <Mobile sx={{ display: ["block", "none"] }}>
-            <HamburgerDropdownLinked />
-          </Mobile>
-        </>
-      </Flex>
-    </Container>
   );
 }
