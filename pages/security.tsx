@@ -57,9 +57,9 @@ function Main() {
         <Flex
           sx={{
             flexDirection: "column",
-            maxWidth: "50%",
+            maxWidth: "60%",
             minWidth: "400px",
-            marginTop: [4]
+            marginTop: [3],
           }}
         >
           <ReactMarkdown

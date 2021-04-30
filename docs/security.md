@@ -1,4 +1,4 @@
-# Element Finance Bug Bounty Program 
+# Element Bug Bounty Program 
 *An ongoing bug bounty for the Element Protocol's smart contracts*
 
 ## Contents
