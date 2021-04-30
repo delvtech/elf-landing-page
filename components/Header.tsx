@@ -16,7 +16,9 @@ export function Header() {
         py={[2, 3]}
         px={[3, 4]}
       >
-        <Icon name="logo" height="69px" width="209px" />
+        <AnchorLink href="/">
+          <Icon name="logo" height="69px" width="209px" />
+        </AnchorLink>
         <>
           <Desktop>
             <Grid
