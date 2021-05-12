@@ -30,7 +30,7 @@ export function Footer() {
                   width={50}
                 />
               </Link>
-              <Link href="https://discord.gg/JpctS728r9" target="_blank">
+              <Link href="https://element.fi/discord" target="_blank">
                 <Icon
                   name="discord"
                   color="background"
