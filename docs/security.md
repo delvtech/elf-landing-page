@@ -27,17 +27,18 @@ The Element Protocol’s core codebase has four main parts: a tokenized wrapper 
 ### Scoping and Desired Results
 All of the smart contracts written by Element that have been deployed are in-scope for this bug bounty program. The following is a non-exclusive list of the smart contracts and the properties we are trying to ensure. Bugs do not have to violate one of these properties to qualify for the bug bounty. Front end and other supporting code is by default not covered by this bug bounty program, however, if you identify problems in the codebase, they may be rewarded by the team but may be subject to different payout levels.
 
-**Source Code:** https://github.com/element-fi/elf-contracts/tree/c59c6d6487a7dac755fa046efa4d8f5f2bc6356a 
+**Source Code:** https://github.com/element-fi/elf-contracts/tree/340025e130b9eb8a5a9f483c431394ef7d5351a0
 
-**Submissions should be based on commit hash:** `c59c6d6487a7dac755fa046efa4d8f5f2bc6356a`
+**Submissions should be based on commit hash:** `340025e130b9eb8a5a9f483c431394ef7d5351a0`
 
 **For the Core Contracts:**
-* [WrappedPosition](https://github.com/element-fi/elf-contracts/blob/c59c6d6487a7dac755fa046efa4d8f5f2bc6356a/contracts/WrappedPosition.sol)
-* [Tranche](https://github.com/element-fi/elf-contracts/blob/c59c6d6487a7dac755fa046efa4d8f5f2bc6356a/contracts/Tranche.sol)
-* [TrancheFactory](https://github.com/element-fi/elf-contracts/blob/c59c6d6487a7dac755fa046efa4d8f5f2bc6356a/contracts/factories/TrancheFactory.sol)
-* [InterestTokenFactory](https://github.com/element-fi/elf-contracts/blob/c59c6d6487a7dac755fa046efa4d8f5f2bc6356a/contracts/factories/InterestTokenFactory.sol)
-* [UserProxy](https://github.com/element-fi/elf-contracts/blob/c59c6d6487a7dac755fa046efa4d8f5f2bc6356a/contracts/UserProxy.sol)
-* [Authorizable](https://github.com/element-fi/elf-contracts/blob/c59c6d6487a7dac755fa046efa4d8f5f2bc6356a/contracts/libraries/Authorizable.sol)
+* [WrappedPosition](https://github.com/element-fi/elf-contracts/blob/340025e130b9eb8a5a9f483c431394ef7d5351a0/contracts/WrappedPosition.sol)
+* [Tranche](https://github.com/element-fi/elf-contracts/blob/340025e130b9eb8a5a9f483c431394ef7d5351a0/contracts/Tranche.sol)
+* [TrancheFactory](https://github.com/element-fi/elf-contracts/blob/340025e130b9eb8a5a9f483c431394ef7d5351a0/contracts/factories/TrancheFactory.sol)
+* [InterestToken](https://github.com/element-fi/elf-contracts/blob/340025e130b9eb8a5a9f483c431394ef7d5351a0/contracts/InterestToken.sol)
+* [InterestTokenFactory](https://github.com/element-fi/elf-contracts/blob/340025e130b9eb8a5a9f483c431394ef7d5351a0/contracts/factories/InterestTokenFactory.sol)
+* [UserProxy](https://github.com/element-fi/elf-contracts/blob/340025e130b9eb8a5a9f483c431394ef7d5351a0/contracts/UserProxy.sol)
+* [Authorizable](https://github.com/element-fi/elf-contracts/blob/340025e130b9eb8a5a9f483c431394ef7d5351a0/contracts/libraries/Authorizable.sol)
 
 We want to be confident that:
 * No user either loses or loses access to funds.
@@ -46,7 +47,7 @@ We want to be confident that:
 * The user proxy always returns the correct amount to users.
 
 **For the Integration Contracts:**
-* [YVaultAssetProxy](https://github.com/element-fi/elf-contracts/blob/c59c6d6487a7dac755fa046efa4d8f5f2bc6356a/contracts/YVaultAssetProxy.sol)
+* [YVaultAssetProxy](https://github.com/element-fi/elf-contracts/blob/340025e130b9eb8a5a9f483c431394ef7d5351a0/contracts/YVaultAssetProxy.sol)
 
 We want to be confident that:
 * No flash loan or other attack can manipulate the interest earned or balance calculations.
@@ -54,8 +55,8 @@ We want to be confident that:
 * There are no conditions where these contracts will lose money.
 
 **For the Custom Balancer Curve:**
-* [ConvergentCurvePool](https://github.com/element-fi/elf-contracts/blob/c59c6d6487a7dac755fa046efa4d8f5f2bc6356a/contracts/ConvergentCurvePool.sol)
-* [ConvergentCurvePoolFactory](https://github.com/element-fi/elf-contracts/blob/c59c6d6487a7dac755fa046efa4d8f5f2bc6356a/contracts/factories/ConvergentPoolFactory.sol)
+* [ConvergentCurvePool](https://github.com/element-fi/elf-contracts/blob/340025e130b9eb8a5a9f483c431394ef7d5351a0/contracts/ConvergentCurvePool.sol)
+* [ConvergentCurvePoolFactory](https://github.com/element-fi/elf-contracts/blob/340025e130b9eb8a5a9f483c431394ef7d5351a0/contracts/factories/ConvergentPoolFactory.sol)
 
 We want to be confident that:
 * The math in the contract matches the math we intended.
